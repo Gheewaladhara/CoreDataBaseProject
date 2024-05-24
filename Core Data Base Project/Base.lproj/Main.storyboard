@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Core_Data_Base_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="id" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cUl-E6-JoY">
+                                <rect key="frame" x="16" y="98" width="382" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EmS-Bb-yJU">
+                                <rect key="frame" x="16" y="148" width="382" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i8q-kJ-cAZ">
+                                <rect key="frame" x="16" y="313" width="382" height="35"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="Jn5-O7-Brh"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Get Data"/>
+                                <connections>
+                                    <action selector="retriveButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CXi-Fc-ZFE"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="update name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZxX-dz-b3Y">
+                                <rect key="frame" x="16" y="198" width="382" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D0C-pe-4Wv">
+                                <rect key="frame" x="16" y="364" width="382" height="35"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="7VJ-3w-yMC"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="update Data"/>
+                                <connections>
+                                    <action selector="updateDataButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nPP-dr-AKd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tc1-7M-dPb">
+                                <rect key="frame" x="16" y="415" width="382" height="35"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="deA-oJ-dyk"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Delete Data"/>
+                                <connections>
+                                    <action selector="deleteDataButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LaX-ep-cji"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tir-p1-7h5">
+                                <rect key="frame" x="16" y="262" width="382" height="35"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="kgN-sT-Pcs"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="save"/>
+                                <connections>
+                                    <action selector="saveButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J6H-aS-oKY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="tc1-7M-dPb" firstAttribute="top" secondItem="D0C-pe-4Wv" secondAttribute="bottom" constant="16" id="6mS-4s-kMY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="i8q-kJ-cAZ" secondAttribute="trailing" constant="16" id="Al9-Vm-GQf"/>
+                            <constraint firstItem="i8q-kJ-cAZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BqR-tx-c07"/>
+                            <constraint firstItem="EmS-Bb-yJU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Gpa-2M-UVo"/>
+                            <constraint firstItem="tc1-7M-dPb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="IfT-Og-3yz"/>
+                            <constraint firstItem="Tir-p1-7h5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Ky7-qx-6hr"/>
+                            <constraint firstItem="tc1-7M-dPb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SEl-Ys-q6O"/>
+                            <constraint firstItem="Tir-p1-7h5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Svv-BV-Fai"/>
+                            <constraint firstItem="EmS-Bb-yJU" firstAttribute="top" secondItem="cUl-E6-JoY" secondAttribute="bottom" constant="16" id="ToY-bG-fwq"/>
+                            <constraint firstItem="Tir-p1-7h5" firstAttribute="top" secondItem="ZxX-dz-b3Y" secondAttribute="bottom" constant="30" id="Upr-0R-TRE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cUl-E6-JoY" secondAttribute="trailing" constant="16" id="V5x-8S-CXe"/>
+                            <constraint firstItem="cUl-E6-JoY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="WWC-I4-kbm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EmS-Bb-yJU" secondAttribute="trailing" constant="16" id="X7d-QB-HaP"/>
+                            <constraint firstItem="ZxX-dz-b3Y" firstAttribute="top" secondItem="EmS-Bb-yJU" secondAttribute="bottom" constant="16" id="ZQb-jc-Ol9"/>
+                            <constraint firstItem="i8q-kJ-cAZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="be3-e5-DLS"/>
+                            <constraint firstItem="cUl-E6-JoY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="cl1-R4-8FL"/>
+                            <constraint firstItem="D0C-pe-4Wv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hJc-Pu-gWO"/>
+                            <constraint firstItem="i8q-kJ-cAZ" firstAttribute="top" secondItem="Tir-p1-7h5" secondAttribute="bottom" constant="16" id="ivE-p0-j3R"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tc1-7M-dPb" secondAttribute="trailing" constant="16" id="jnM-wI-Ps2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZxX-dz-b3Y" secondAttribute="trailing" constant="16" id="lTK-iy-Usb"/>
+                            <constraint firstItem="D0C-pe-4Wv" firstAttribute="top" secondItem="i8q-kJ-cAZ" secondAttribute="bottom" constant="16" id="lmW-cY-PfA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="D0C-pe-4Wv" secondAttribute="trailing" constant="16" id="toH-ex-gKa"/>
+                            <constraint firstItem="D0C-pe-4Wv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="vat-jK-Iz1"/>
+                            <constraint firstItem="ZxX-dz-b3Y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="x8P-mV-Fv7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Tir-p1-7h5" secondAttribute="trailing" constant="16" id="xKj-yb-Xzk"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="deleteButtonOutlet" destination="tc1-7M-dPb" id="Keo-gS-f7A"/>
+                        <outlet property="getdataButtonOutlet" destination="i8q-kJ-cAZ" id="zjd-yR-Qdw"/>
+                        <outlet property="idTextFieldOutlet" destination="cUl-E6-JoY" id="Qqq-K4-C5l"/>
+                        <outlet property="name2TextfieldOutlet" destination="ZxX-dz-b3Y" id="vlN-K4-ISW"/>
+                        <outlet property="nameTextFieldOutlet" destination="EmS-Bb-yJU" id="TP7-eA-hQL"/>
+                        <outlet property="savebuttonOutlet" destination="Tir-p1-7h5" id="T4o-Pt-hCG"/>
+                        <outlet property="updateButtonOutlet" destination="D0C-pe-4Wv" id="82u-k7-wVY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="92.410714285714278"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
